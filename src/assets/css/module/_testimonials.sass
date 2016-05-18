@@ -1,0 +1,70 @@
+.testimonials
+  height: 461px
+  background:
+    image: url('../imgs/test-bg.jpg')
+    size: cover
+    position: center top
+  text-align: center
+  padding: 60px 0
+  position: relative
+
+  .user-wrapper
+    position: relative
+    height: 300px
+
+  .user-card
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    transition: all 1s ease-in-out
+
+    &.is-active
+      opacity: 1
+
+  .user-img
+    img
+      border-radius: 50%
+      border: solid 5px #948A94
+
+  .user-quote
+    font-weight: 300
+    margin-top: 5px
+    opacity: 0.4
+
+    blockquote
+      font-size: 3.5rem
+      margin-bottom: 5px
+      border: none
+
+      @media (max-width: $screen-sm-max)
+        font-size: 2.3rem
+
+    cite
+      font-size: 2rem
+  
+  .test-quotes
+    margin-top: 40px
+    margin-right: -20px
+
+    li
+      width: 10px
+      height: 10px
+      margin-right: 10px
+      border-radius: 50%
+      background-color: #FFF
+      opacity: 0.4
+      transition: all 500ms ease-in-out
+      cursor: pointer
+
+      &:hover
+        opacity: 0.8
+
+
+      &.is-active
+        opacity: 1
+
+
+

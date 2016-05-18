@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+      meta(charset="utf-8")
+      title Fudi Recipies
+      meta(name="Fudi Landing Page", content="")
+      meta(name="Justin Tafoya", content="")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      link(rel="stylesheet", href="assets/css/app.css")
+      link(rel="icon" type="image/png" href="assets/imgs/favicon-blk.png")
+
+
+  body
+
+    // Import Hero Section
+    include _includes/_hero.jade
+
+
+    // Import Feature Section
+    include _includes/_features.jade
+
+
+    // Import App Section
+    include _includes/_app.jade
+
+
+    // Import Testimonial Section
+    include _includes/_testimonials.jade
+
+
+    // Import Cusines Section
+    include _includes/_cuisines.jade
+
+
+    // Import Site Stats Section
+    include _includes/_site-stats.jade
+
+
+    // Import Cusines Section
+    include _includes/_footer.jade
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js")
+    script(src="assets/js/app.js")

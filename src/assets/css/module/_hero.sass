@@ -1,0 +1,41 @@
+.hero
+  height: 880px
+  position: relative
+  background: 
+    image: url("../imgs/Hero-bg.jpg")
+    repeat: no-repeat
+    size: cover
+    position: top center
+
+
+  .hero-cta
+    text-align: center
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    transform: translate(0, 37%)
+
+    // Iphone and smaller devices
+    @media (max-width: 414px)
+      font-size: 12px // Base value will adjust the other elements font sizes
+      transform: translate(0, 27%)
+
+    .header
+      font-size: 7.1em
+      margin-top: 0
+      line-height: 1
+
+    .sub-header
+      opacity: 0.7
+      font:
+        family: "Times New Roman", Georgia, Serif
+        size: 2.5em
+        style: italic
+        weight: bold
+      margin-bottom: 0
+
+    p > a
+      font-weight: bold
+      text-decoration: underline

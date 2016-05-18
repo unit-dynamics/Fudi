@@ -1,0 +1,40 @@
+.app
+  background-color: $secondary-color
+  color: $secondary-font-color
+  overflow: hidden
+  padding-top: 100px
+
+
+  .app-image
+    opacity: 0
+    width: 100%
+    transform: translate(-300px, 0)
+    transition: opacity 200ms ease-in-out, transform 1ms ease-in-out
+
+  .info
+    opacity: 0
+    padding: 75px 0
+    transform: translate(300px, 0)
+    transition: opacity 200ms ease-in-out, transform 1ms ease-in-out
+
+  .info-header
+    
+    // Iphone and smaller devices
+    @media (max-width: 414px)
+      font-size: 2.3rem
+
+    // Make the underline left justified
+    &.accent-underline:after
+      margin: 8px 0 5px 
+
+  .info-content
+    font-weight: 300
+    font-size: 1.7rem
+    line-height: 1.8
+
+  .info-btn-group
+    margin-top: 18px
+    a
+      padding-right: 10px
+
+
