@@ -7692,8 +7692,10 @@ button.close {
 }
 
 .app {
+  background-color: #F7F7F7;
   color: #000000;
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .app .app-image {
@@ -7926,7 +7928,7 @@ fieldset[disabled] .btn-cta.focus {
 }
 
 .features {
-  padding: 100px 0;
+  padding: 100px 0 60px;
   text-align: center;
   color: #000000;
 }
@@ -7948,10 +7950,12 @@ fieldset[disabled] .btn-cta.focus {
 }
 
 .footer {
-  padding: 100px 0;
+  padding: 33px 0;
   color: #000000;
   font-weight: 300;
   text-align: center;
+  border-top: solid 1px #E2E2E2;
+  background-color: #F7F7F7;
 }
 
 .footer span {
@@ -8070,6 +8074,7 @@ fieldset[disabled] .btn-cta.focus {
 .stats {
   text-align: center;
   color: #000000;
+  margin-bottom: 60px;
 }
 
 .stats .stat-container {
