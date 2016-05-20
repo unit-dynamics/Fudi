@@ -72,7 +72,7 @@ dfn {
   font-style: italic;
 }
 
-h1 {
+h1, .font-lg {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -1474,7 +1474,7 @@ hr {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6,
+h1, .font-lg, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -1482,8 +1482,8 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 
-h1 small,
-h1 .small, h2 small,
+h1 small, .font-lg small,
+h1 .small, .font-lg .small, h2 small,
 h2 .small, h3 small,
 h3 .small, h4 small,
 h4 .small, h5 small,
@@ -1501,15 +1501,15 @@ h6 .small,
   color: #777777;
 }
 
-h1, .h1,
+h1, .font-lg, .h1,
 h2, .h2,
 h3, .h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-h1 small,
-h1 .small, .h1 small,
+h1 small, .font-lg small,
+h1 .small, .font-lg .small, .h1 small,
 .h1 .small,
 h2 small,
 h2 .small, .h2 small,
@@ -1539,7 +1539,7 @@ h6 .small, .h6 small,
   font-size: 75%;
 }
 
-h1, .h1 {
+h1, .font-lg, .h1 {
   font-size: 36px;
 }
 
@@ -5667,7 +5667,7 @@ a.badge:hover, a.badge:focus {
   background-color: #eeeeee;
 }
 
-.jumbotron h1,
+.jumbotron h1, .jumbotron .font-lg,
 .jumbotron .h1 {
   color: inherit;
 }
@@ -5703,7 +5703,7 @@ a.badge:hover, a.badge:focus {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .jumbotron h1,
+  .jumbotron h1, .jumbotron .font-lg,
   .jumbotron .h1 {
     font-size: 63px;
   }
@@ -7687,6 +7687,10 @@ button.close {
   border-bottom: solid 1px red;
 }
 
+.font-lg {
+  display: block;
+}
+
 .expand {
   padding: 0 0;
   overflow: hidden;
@@ -7810,7 +7814,7 @@ fieldset[disabled] .btn-cta.focus {
   background-color: #FFFFFF;
 }
 
-.btn-cta:hover {
+.btn-cta:hover, .btn-cta:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -7819,7 +7823,7 @@ fieldset[disabled] .btn-cta.focus {
   text-align: center;
 }
 
-.cuisines h3 {
+.cuisines h2 {
   color: #000000;
   margin-bottom: 40px;
 }
@@ -7846,17 +7850,17 @@ fieldset[disabled] .btn-cta.focus {
   }
 }
 
-.cuisines .cusine-list figure:hover figcaption:before {
+.cuisines .cusine-list figure:hover figcaption:before, .cuisines .cusine-list figure:focus figcaption:before {
   opacity: 1;
 }
 
-.cuisines .cusine-list figure:hover figcaption:after {
+.cuisines .cusine-list figure:hover figcaption:after, .cuisines .cusine-list figure:focus figcaption:after {
   height: 52%;
   top: 19%;
   opacity: 1;
 }
 
-.cuisines .cusine-list figure:hover img {
+.cuisines .cusine-list figure:hover img, .cuisines .cusine-list figure:focus img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -8044,16 +8048,17 @@ fieldset[disabled] .btn-cta.focus {
 }
 
 @media (max-width: 414px) {
-  .modal-option h1 {
+  .modal-option .font-lg {
     font-size: 26px;
   }
 }
 
-.modal-option span {
+.modal-option .glyphicon {
   font-size: 23px;
 }
 
-.modal-option h1 {
+.modal-option .font-lg {
+  display: block;
   margin-top: 10px;
 }
 
@@ -8138,7 +8143,7 @@ fieldset[disabled] .btn-cta.focus {
   }
 }
 
-.stats .stat-container h1 {
+.stats .stat-container h1, .stats .stat-container .font-lg {
   font-weight: bold;
 }
 
