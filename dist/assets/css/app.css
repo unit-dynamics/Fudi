@@ -7721,6 +7721,12 @@ button.close {
   transition: opacity 200ms ease-in-out, transform 1ms ease-in-out, -webkit-transform 1ms ease-in-out;
 }
 
+@media (max-width: 991px) {
+  .app .info {
+    padding: 75px 15px;
+  }
+}
+
 @media (max-width: 414px) {
   .app .info-header {
     font-size: 2.3rem;
