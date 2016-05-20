@@ -6,4 +6,7 @@ nav.nav
         ul.list-inline.menu
           li: a(href="") LOG IN 
           li: a(href="") SIGN UP
-          li: .menu-btn: span
+          li: .menu-btn(data-toggle="modal" data-target=".menu-modal"): span
+
+    // Import Menu Modal Section
+    include _menu-modal.jade

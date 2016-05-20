@@ -40,6 +40,7 @@ $(document).ready(function() {
   var testLength = $testimonials.length;
   var $testQuotes = $('.test-quotes li');
 
+  //--- Carousel Logic
   function nextTestimonial(){
     if ($('.user-card').filter('.is-active').index() < (testLength -1)) {
       $testimonials.filter('.is-active').next().addClass('is-active').siblings().removeClass('is-active');
@@ -55,6 +56,7 @@ $(document).ready(function() {
   // Set the carousel delay
   var carouselInterval = setInterval(function(){ nextTestimonial() }, 4500);
 
+  //--- Carousel Nav Logic
   $testQuotes.on("click", function() {
 
     // Pause carousel
@@ -71,9 +73,14 @@ $(document).ready(function() {
 
   // ----- Nav Section ------//
 
-  $('.menu-btn').on('click', function(){
+  // Animate Menu Button To A Close Sign
+  $('.menu-btn').on('click', function(event){
+    $('.menu-btn').addClass('open');
+  })
 
-    $(this).toggleClass('open');
+  // Animate Menu Button From a Close Sign to A Hamburger
+  $('.menu-modal').on('click', function(event){
+    $('.menu-btn').removeClass('open');
   })
 
 })

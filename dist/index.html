@@ -22,9 +22,20 @@
                 <li><a href="">LOG IN </a></li>
                 <li><a href="">SIGN UP</a></li>
                 <li>
-                  <div class="menu-btn"><span></span></div>
+                  <div data-toggle="modal" data-target=".menu-modal" class="menu-btn"><span></span></div>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Import Menu Modal Section-->
+        <div tabindex="-1" class="menu-modal fade modal">
+          <div data-dismiss="modal" class="modal-dialog">
+            <div class="modal-option"><span class="glyphicon glyphicon-user"></span>
+              <h1>Log In</h1>
+            </div>
+            <div class="modal-option"><span class="glyphicon glyphicon-pencil"></span>
+              <h1>Sign Up</h1>
             </div>
           </div>
         </div>
@@ -74,7 +85,7 @@
               <p>Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a massa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.</p>
               <p>Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa.</p>
             </div>
-            <div class="info-btn-group"><a href="" role="button"><img src="assets/imgs/itunes-btn.jpg" alt="app store"></a><a href="" role="button"><img src="assets/imgs/android-btn.jpg" alt="google play"></a></div>
+            <div class="info-btn-group"><a href="http://www.apple.com/itunes/charts/free-apps/" role="button"><img src="assets/imgs/itunes-btn.jpg" alt="app store"></a><a href="https://play.google.com/store?hl=en" role="button"><img src="assets/imgs/android-btn.jpg" alt="google play"></a></div>
           </div>
         </div>
       </div>
@@ -105,15 +116,15 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="test-quotes">
-            <ul class="list-inline">
-              <li data-user="0" class="is-active"></li>
-              <li data-user="1"></li>
-              <li data-user="2"></li>
-            </ul>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="test-quotes">
+              <ul class="list-inline">
+                <li data-user="0" class="is-active"></li>
+                <li data-user="1"></li>
+                <li data-user="2"></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -202,8 +213,8 @@
         </div>
       </div>
     </section>
-    <!-- Import Cusines Section-->
-    <section class="footer">
+    <!-- Import Footer Section-->
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -214,8 +225,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

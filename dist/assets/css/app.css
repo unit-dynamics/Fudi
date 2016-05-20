@@ -7689,6 +7689,7 @@ button.close {
 
 .expand {
   padding: 0 0;
+  overflow: hidden;
 }
 
 .app {
@@ -8013,12 +8014,53 @@ fieldset[disabled] .btn-cta.focus {
   text-decoration: underline;
 }
 
+.modal-backdrop {
+  background-color: transparent;
+  background-image: linear-gradient(#000, transparent);
+  transition: all 1s ease-in-out;
+}
+
+.modal-dialog {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.modal-option {
+  border: solid 2px white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  margin: 0px 20px 10px 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all  0.4s ease-in-out;
+}
+
+@media (max-width: 414px) {
+  .modal-option h1 {
+    font-size: 26px;
+  }
+}
+
+.modal-option span {
+  font-size: 23px;
+}
+
+.modal-option h1 {
+  margin-top: 10px;
+}
+
+.modal-option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .nav {
   padding-top: 23px;
 }
 
 .nav .menu {
-  margin-top: 23px;
+  margin-top: 15px;
   font-size: 14px;
   font-weight: bold;
 }
@@ -8036,7 +8078,7 @@ fieldset[disabled] .btn-cta.focus {
   top: 14px;
   background-color: #FFF;
   border-radius: 1px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav .menu-btn span:before, .nav .menu-btn span:after {
