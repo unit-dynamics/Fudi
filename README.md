@@ -9,9 +9,12 @@ Mockup - http://omahpsd.com/psd-design/free-fudi-landing-page/
 
 # Built With:
 - HTML5
+ - Jade
 - CSS3
+ - Sass
 - Jquery
 - Bootstrap 3
+ - Sass Version
 
 # Install
 
