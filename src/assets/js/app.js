@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  'use strict';
 
   // ----- Scroll Events ------//
   $(window).scroll(function(){
@@ -23,16 +24,33 @@ $(document).ready(function() {
     if(wScroll > $appImage.offset().top - ($(window).height() / 1.3)) {
       
       // Get Offset to base animation on
-      var offset = (Math.min(0, wScroll - $appImage.offset().top + $(window).height() - 610)).toFixed();
+      var offset = wScroll - $appImage.offset().top + $(window).height() - 610;
 
-      $($appImage).css({transform: 'translate(' + offset + 'px, 0', opacity: '1'});
-      $($appInfo).css({transform: 'translate(' + Math.abs(offset) + 'px, 0', opacity: '1'});
+      // Stop adjusting position once offset reaches 0px
+      if (offset < 0) {
+
+        $appImage.css({
+          '-webkit-transform': 'translate(' + offset + 'px, 0)',
+          '-ms-transform': 'translate(' + offset + 'px, 0)',
+          transform: 'translate(' + offset + 'px, 0)',
+          opacity: '1'});
+
+        $appInfo.css({
+          '-webkit-transform': 'translate(' + Math.abs(offset) + 'px, 0)',
+          '-ms-transform': 'translate(' + Math.abs(offset) + 'px, 0)',
+          transform: 'translate(' + Math.abs(offset) + 'px, 0)',
+          opacity: '1'});
+      }
     }
 
     //--- Flip in cusine options
     if(wScroll > $figures.offset().top - ($(window).height() / 1.5)) {
-      $figures.css('transform', 'rotateY(0deg)');
+      $figures.css({
+        '-webkit-transform': 'rotateY(0deg)',
+        '-ms-transform': 'rotateY(0deg)',
+        'transform': 'rotateY(0deg)'});
     }
+    
   })
 
   // ----- Testimonial Carousel ------//
