@@ -1,5 +1,5 @@
 # Fudi
-Fudi - Coded From PSD A Mockup
+Fudi - Coded from a PSD mockup
 
 Demo - http://unit-dynamics.github.io/Fudi/dist/
 
